@@ -19,7 +19,7 @@ function getAndPrintHTML (options) {
 
 // notice that https.get takes a callback with one parameter -
 // response, which is a Stream that represents the HTTP response
-https.get(requestOptions, function (response) {
+https.get(options, function (response) {
 
   // set encoding of received data to UTF-8
   response.setEncoding('utf8');
