@@ -5,18 +5,13 @@ var https = require('https');
 // and the path is the resource - '/' is the root path, but if you wanted to read a
 // particular resource (like '/login/index.html'), that would be defined in the path
 
-
-var requestOptions = {
-  host: 'sytantris.github.io',
-  //path: '/http-examples/step4.html'
-  path: '/http-examples/step5.html'
-};
-
 function printHTML (html) {
   console.log(html);
 }
 
-function getHTML (options, callback) {
+
+module.exports = function getHTML (options, callback) {
+    /* Your code here */
 
   var new_data = "";
 
@@ -46,9 +41,6 @@ https.get(options, function (response) {
 });
 
 }
-
-getHTML (requestOptions, printHTML);
-
 
 
 
