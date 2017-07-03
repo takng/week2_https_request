@@ -30,8 +30,8 @@ https.get(requestOptions, function (response) {
     console.log('Chunk Received. Length:', data.length);
 
     console.log(typeof data);
-    new_data = data + "\n";
-    console.log(new_data);
+    console.log(data + "\n");
+    //console.log(new_data);
   });
 
   // the callback is invoked when all of the data has been received
