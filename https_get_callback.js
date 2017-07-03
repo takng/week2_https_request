@@ -46,7 +46,7 @@ https.get(requestOptions, function (response) {
 
 }
 
-getHTML (options, printHTML);
+getHTML (requestOptions, printHTML);
 
 
 
